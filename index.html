@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="musico,guitarrista,productor,arreglista,musico sesionista,bajista"
+    />
+    <meta
+      name="description"
+      content="Obra y trabajos de Lucas P. Basso musico guitarrista, sesionista y productor"
+    />
+    <title>Home Lucas P. Basso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2f91754908.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/cookies.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="fixed-header">
+      <div class="banderas">
+        <a href="index.html" class="banderas"
+          ><img
+            src="https://flagcdn.com/h20/es.png"
+            srcset="
+              https://flagcdn.com/h40/es.png 2x,
+              https://flagcdn.com/h60/es.png 3x
+            "
+            width="30"
+            height="20"
+            alt="España"
+        /></a>
+        <a href="indexEN.html" class="banderas">
+          <img
+            src="https://flagcdn.com/h20/us.png"
+            srcset="
+              https://flagcdn.com/h40/us.png 2x,
+              https://flagcdn.com/h60/us.png 3x
+            "
+            width="30"
+            height="20"
+            alt="Estados Unidos"
+        /></a>
+      </div>
+      <nav class="navegadorRedes">
+        <a
+          href="https://www.facebook.com/lucasfabianguitar/"
+          target="_blank"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/lucaspbassoguitar/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UC3DHFu9ECUnPB9rNCuvwn3w"
+          target="_blank"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a
+          href="https://open.spotify.com/intl-es/artist/7fjr2gw4uLAIhjg02svKfu"
+          target="_blank"
+          ><i class="fa-brands fa-spotify"></i
+        ></a>
+        <a href="https://www.tiktok.com/@lucaspbasso?lang=es" target="_blank"
+          ><i class="fa-brands fa-tiktok"></i
+        ></a>
+      </nav>
+      <button id="botonHamburguesa" onclick=" Menu();">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav id="navegador" class="">
+        <a class="seleccionado" href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="biografia.html">Sobre mí</a>
+        <a href="galeria.html">Imagenes</a>
+        <a href="portfolio.html">Creditos</a>
+      </nav>
+    </header>
+    <main class="mainPortfolio">
+      <section class="bannerIndex">
+        <div class="nombreBanner">
+          <div class="nombreBanner-titulos">
+            <h1>LUCAS P. BASSO</h1>
+            <h3>
+              Guitarrista Profesional, Sesionista <br />
+              Productor Musical
+            </h3>
+          </div>
+        </div>
+        <div class="imagenesBanner">
+          <img
+            class="imagenBanner"
+            height="874"
+            src="imagenes/servicios2.jpg"
+            alt="imagen banner"
+            width="1240"
+          />
+          <img
+            class="imagenBanner"
+            height="874"
+            src="imagenes/galeria2.jpg"
+            alt="imagen banner"
+            width="1240"
+          />
+          <img
+            class="imagenBanner"
+            height="874"
+            src="imagenes/servicios1.jpg"
+            alt="imagen banner"
+            width="1240"
+          />
+          <img
+            class="imagenBanner"
+            height="874"
+            src="imagenes/galeria4.jpg"
+            alt="imagen banner"
+            width="1240"
+          />
+        </div>
+      </section>
+      <section class="musicaIndex">
+        <audio id="player" src="musica/Wounded.wav"></audio>
+        <div class="reproductor-musica">
+          <h3>Conoce a <span>KAYZEN</span></h3>
+          <div class="player">
+            <div class="control">
+              <i class="fas fa-play" id="playbtn"></i>
+            </div>
+            <div class="info">
+              Wounded - Kayzen
+              <div class="bar">
+                <div id="progress"></div>
+              </div>
+            </div>
+
+            <div id="current">0:00</div>
+          </div>
+        </div>
+        <div class="contenidoMusica">
+          <p>
+            Si eres amante del rock de los años 80 y 90, no puedes
+            contenidoMusicaRedesperderte nuestra banda. Componemos y producimos
+            con músicos de alto nivel. Sumérgete en el rock y el grunge con
+            nuestras canciones disponibles en todas las plataformas digitales.
+            ¡Escúchanos!
+          </p>
+          <nav class="contenidoMusicaRedes">
+            <a
+              href="https://www.facebook.com/kayzenband?ref=pages_you_manage"
+              target="_blank"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/kayzenofficial/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCDUcoZlOtNm78bgWfj1vcKw"
+              target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a
+              href="https://open.spotify.com/intl-es/artist/7fjr2gw4uLAIhjg02svKfu"
+              target="_blank"
+              ><i class="fa-brands fa-spotify"></i
+            ></a>
+            <a href="https://www.tiktok.com/@kayzenofficial" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </nav>
+        </div>
+      </section>
+      <section class="musicaIndex">
+        <div class="servicioIndexTitulo">
+          <h3>Mis Servicios</h3>
+        </div>
+        <div class="servicioIndexContenido">
+          <p>
+            Como guitarrista y productor, estoy aquí para ofrecerte una amplia
+            gama de servicios que impulsarán tu proyecto musical.
+          </p>
+          <p>
+            Si quieres saber más, <a href="servicios.html"> haz click aquí.</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="instagram">
+        <h3>Sígueme en Instagram</h3>
+        <script
+          src="https://static.elfsight.com/platform/platform.js"
+          data-use-service-core
+          defer
+        ></script>
+        <div class="elfsight-app-39aaf0dc-bf51-4787-8990-98d2e6836442"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="contenedorFooter">
+        <div class="footerFlex">
+          <a class="whatsapp" href="https://wa.me/34658535729" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a class="email" href="mailto:lucasfabianperez08@gmail.com"
+            ><i class="fa-sharp fa-regular fa-envelope"></i>
+            lucasfabianperez08@gmail.com</a
+          >
+          <a class="cookies" href="aviso-cookies.html" target="_blank"
+            >Política de Cookies</a
+          >
+        </div>
+        <div class="footerFlex">
+          <a class="telefono" href="tel:+34658535729"
+            ><i class="fa-solid fa-phone-volume"></i> 658 53 57 29</a
+          >
+          <p class="copy">&copy; 2023 N9 Web Developer</p>
+          <a class="terminos" href="politicaPrivacidad.html" target="_blank"
+            >Terminos Legales</a
+          >
+        </div>
+      </div>
+    </footer>
+    <div class="aviso-cookies" id="aviso-cookies">
+      <h3 class="titulo">Cookies</h3>
+      <p class="parrafo">
+        Utilizamos cookies propias y de terceros para mejorar nuestros
+        servicios.
+      </p>
+      <button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
+      <a class="enlace" href="aviso-cookies.html">Aviso de Cookies</a>
+    </div>
+    <div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
+
+    <script src="js/aviso-cookies.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+      integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"
+      integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/index.js"></script>
+    <script src="js/reproductorIndex.js"></script>
+  </body>
+</html>

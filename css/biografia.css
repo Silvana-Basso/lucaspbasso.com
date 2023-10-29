@@ -1,0 +1,129 @@
+#tituloBiografia {
+  font-family: "Aguafina Script", cursive;
+}
+
+
+.tituloBiografia {
+  color: var(--colorSecundario);
+  font-size: 3.5rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom:0;
+}
+
+@media (min-width: 768px) {
+  .tituloBiografia {
+    font-size: 4rem;
+    margin: 5rem 0;
+  }
+}
+.biografia{
+  width:100%;
+  margin:0 auto;
+}
+.contenedorBio,.contenedorBioSolo, .contenedorBio2, .contenedorBioKayzen{
+  width:90%;
+  display:flex;
+  flex-direction:column-reverse;
+  margin:4rem auto ;
+  
+}
+@media (min-width: 768px){
+  .contenedorBio{
+    width:80%;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-araund;
+  }
+  .contenedorBio2{
+    width:80%;
+    flex-direction:row-reverse;
+    align-items:center;
+    justify-content:space-araund;
+  }
+  
+}
+.contenidoBio,.contenidoBioSolo,.contenidoBio2, .contenidoBioKayzen{
+  margin:0 auto ;
+  margin-bottom:4rem;
+  text-align:justify;
+}
+
+@media (min-width: 768px){
+  .contenidoBio,.contenidoBio2{
+    width:50%;
+    margin:0 auto ;
+  }
+  .contenidoBioKayzen,.contenidoBioSolo{
+    width:80%;
+    margin:0 auto;
+  }
+  .contenidoBio{
+    margin-right:-1.5vw;
+  }
+}
+.imgBio,.imgBio2 {
+  width:100%;
+  overflow:hidden;
+  border-radius:10px;
+
+}
+@media (min-width: 768px){
+  .imgBio{
+    width:30%;
+    margin-left:5rem;
+  }
+.imgBio2{
+    width:40%;
+  
+  }
+}
+.imgBio img,.imgBio2 img, .figureBio img{
+  display:block;
+  width:100%;
+  object-fit: cover;
+  margin-bottom:1rem;
+}
+
+.imgBio img:hover,.imgBio2 img:hover, .figureBio img:hover{
+  transform: scale(1.3);
+  transition: 15s;
+}
+.figureBio{
+  width:90%;
+  margin:4rem auto ;
+  overflow:hidden;
+}
+@media (min-width: 768px){
+  .figureBio{
+    width:60%;
+  
+  }
+}
+.figureRedes{
+  margin-top:1rem;
+}
+.figureRedes a {
+  display: inline-block;
+
+  transition: all 0.7s;
+  padding: 5px;
+  margin-left: 15px;
+  color: var(--colorFuente);
+}
+.figureRedes a:hover i {
+  color: var(--colorFuente);
+  transform: rotateY(150deg);
+}
+
+.figureRedes a i {
+  transition: all 0.7s;
+  color: var(--colorFuente);
+  margin-right: 0;
+  margin-left: 5px;
+  font-size: 25px;
+}
+figcaption{
+  text-align:center;
+}

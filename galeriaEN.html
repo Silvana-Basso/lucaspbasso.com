@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="musico,guitarrista,productor,arreglista" />
+    <meta
+      name="description"
+      content="obra y trabajos de Lucas P. Basso musico guitarrista"
+    />
+    <title>Galería de Imagenes Lucas P. Basso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2f91754908.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/cookies.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/galeria.css" />
+    <style>
+      .bannerImagen {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url(../imagenes/galeria10.jpg);
+
+        background-position: 50% 40%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 40rem;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body onload="showSlides(0);  openModal() ; closeModal();">
+    <header class="fixed-header">
+      <div class="banderas">
+        <a href="galeria.html" class="banderas"
+          ><img
+            src="https://flagcdn.com/h20/es.png"
+            srcset="
+              https://flagcdn.com/h40/es.png 2x,
+              https://flagcdn.com/h60/es.png 3x
+            "
+            width="30"
+            height="20"
+            alt="España"
+        /></a>
+        <a href="galeriaEN.html" class="banderas">
+          <img
+            src="https://flagcdn.com/h20/us.png"
+            srcset="
+              https://flagcdn.com/h40/us.png 2x,
+              https://flagcdn.com/h60/us.png 3x
+            "
+            width="30"
+            height="20"
+            alt="Estados Unidos"
+        /></a>
+      </div>
+      <nav class="navegadorRedes">
+        <a
+        href="https://www.facebook.com/lucasfabianguitar/"
+        target="_blank"
+        ><i class="fa-brands fa-square-facebook"></i
+      ></a>
+        <a href="https://www.instagram.com/lucaspbassoguitar/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UC3DHFu9ECUnPB9rNCuvwn3w"
+          target="_blank"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a
+          href="https://open.spotify.com/intl-es/artist/7fjr2gw4uLAIhjg02svKfu"
+          target="_blank"
+          ><i class="fa-brands fa-spotify"></i
+        ></a>
+        <a href="https://www.tiktok.com/@lucaspbasso?lang=es" target="_blank"
+          ><i class="fa-brands fa-tiktok"></i
+        ></a>
+      </nav>
+      <button id="botonHamburguesa" onclick=" Menu();">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav id="navegador" class="">
+        <a href="indexEN.html">Home</a>
+        <a href="serviciosEN.html">Services</a>
+        <a href="biografiaEN.html">About</a>
+        <a class="seleccionado" href="galeriaEN.html">Images</a>
+        <a href="portfolioEN.html">Credits</a>
+      </nav>
+    </header>
+
+    <section id="bannerPrincipalServicios">
+      <div class="bannerImg">
+        <img src="imagenes/guitarra.jpg" alt="" />
+      </div>
+
+      <div class="bannerTexto">
+        <h1 id="tituloPrincipalServ">LUCAS P. BASSO</h1>
+        <h4 id="subtituloServ">
+          Professional Guitarist, Sessionist <br />
+          Music producer
+        </h4>
+      </div>
+    </section>
+    <main class="mainGaleria">
+      <h2>Images</h2>
+      <div class="gallery"></div>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content"></div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="contenedorFooter">
+        <div class="footerFlex">
+          <a class="whatsapp" href="https://wa.me/34658535729" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a class="email" href="mailto:lucasfabianperez08@gmail.com"
+            ><i class="fa-sharp fa-regular fa-envelope"></i>
+            lucasfabianperez08@gmail.com</a
+          >
+          <a class="cookies" href="aviso-cookiesEN.html" target="_blank"
+            >Cookies policy</a
+          >
+        </div>
+        <div class="footerFlex">
+          <a class="telefono" href="tel:+34658535729"
+            ><i class="fa-solid fa-phone-volume"></i> 658 53 57 29</a
+          >
+          <p class="copy">&copy; 2023 N9 Web Developer</p>
+          <a class="terminos" href="politicaPrivacidadEN.html" target="_blank"
+            >Legal terms</a
+          >
+        </div>
+      </div>
+    </footer>
+    <div class="aviso-cookies" id="aviso-cookies">
+      <h3 class="titulo">Cookies</h3>
+      <p class="parrafo">
+        We use our own and third-party cookies to improve our services.
+      </p>
+      <button class="boton" id="btn-aceptar-cookies">OK</button>
+      <a class="enlace" href="aviso-cookiesEN.html">Cookie Notice</a>
+    </div>
+    <div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
+    <script src="js/index.js"></script>
+    <script src="js/galeria.js"></script>
+  </body>
+</html>
